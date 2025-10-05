@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daggerheart Character Creation Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        h1 {
+            color: #8b2e2e;
+            border-bottom: 3px solid #8b2e2e;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            color: #6d1f1f;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-left: 5px solid #8b2e2e;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #8b2e2e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        h4 {
+            color: #a84343;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        p, li {
+            margin-bottom: 10px;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            border-radius: 5px;
+            border-left: 4px solid #8b2e2e;
+            margin-bottom: 40px;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            border: none;
+            padding: 0;
+            font-size: 1.8em;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .toc a {
+            color: #8b2e2e;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .toc a:hover {
+            color: #a84343;
+            text-decoration: underline;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #8b2e2e;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background 0.3s, transform 0.3s;
+        }
+        
+        .back-to-top:hover {
+            background: #6d1f1f;
+            transform: translateY(-3px);
+        }
+        
+        strong, em {
+            color: #6d1f1f;
+        }
+        
+        .class-header, .ancestry-header, .community-header, .armor-header {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 4px solid #8b2e2e;
+        }
+        
+        .stat-line {
+            color: #555;
+            font-style: italic;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #e9ecef;
+            margin: 40px 0;
+        }
+        
+        code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="top">Daggerheart Character Creation Guide</h1>
+        
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#essentials">The Essentials</a></li>
+                <li><a href="#step-by-step">Step-by-Step Character Creation</a></li>
+                <li><a href="#checklist">Character Creation Checklist</a></li>
+                <li><a href="#starting-stats">Starting Stats Summary</a></li>
+                <li><a href="#classes">Classes Reference</a></li>
+                <li><a href="#ancestries">Ancestries Reference</a></li>
+                <li><a href="#communities">Communities Reference</a></li>
+                <li><a href="#armor">Armor Reference</a></li>
+            </ul>
+        </div>
+        
+        <p>Welcome to the Daggerheart character creation guide! This document will walk you through the steps to create a Level 1 character, covering everything from choosing your class and heritage to defining your background and abilities.</p>
+        
+        <h2 id="essentials">The Essentials</h2>
+        <p>Choose your class and heritage, assign trait scores, fill in vital stats, pick equipment, create your background, define experiences, select abilities, and establish party connections.</p>
+        
+        <h2 id="step-by-step">Step-by-Step Character Creation</h2>
+        
+        <h3>1. Choose a Class & Subclass</h3>
+        <p>Pick one of nine fantasy classes that suits your playstyle. Each class has access to two <strong>Domains</strong> (categories of abilities/spells) and comes with a unique class feature. At level 1, you also choose a <strong>Subclass</strong> (Foundation) that further specializes your character.</p>
+        <p><em>Example: Choose Bard and pick one of its two subclasses, gaining the listed features including a special "Hope feature."</em></p>
+        
+        <h3>2. Choose Your Heritage</h3>
+        <p>Your <strong>Heritage</strong> has two parts:</p>
+        <ul>
+            <li><strong>Ancestry:</strong> Your species/lineage (Human, Dwarf, Elf, Orc, Faerie, etc.)</li>
+            <li><strong>Community:</strong> Where you grew up (Loreborne, Seaborne, Wildborne, etc.)</li>
+        </ul>
+        <p>Each ancestry grants two special features, and each community grants one feature. You can even mix ancestries for advanced character concepts.</p>
+        
+        <h3>3. Assign Your Six Traits</h3>
+        <p>Every character has six core traits representing their capabilities:</p>
+        <ul>
+            <li><strong>Agility:</strong> Quickness and reflexes</li>
+            <li><strong>Strength:</strong> Physical might</li>
+            <li><strong>Finesse:</strong> Dexterity and precision</li>
+            <li><strong>Instinct:</strong> Perception and survival sense</li>
+            <li><strong>Presence:</strong> Charisma and leadership</li>
+            <li><strong>Knowledge:</strong> Intelligence and learning</li>
+        </ul>
+        <p><strong>Assign these modifiers: +2, +1, +1, +0, +0, -1</strong></p>
+        <p><em>Decide which trait gets which value based on your character concept.</em></p>
+        
+        <h3>4. Fill in Level & Vital Stats</h3>
+        <p>All new characters start at <strong>Level 1</strong>. Record your starting stats:</p>
+        <ul>
+            <li><strong>Hit Points (HP)</strong> and <strong>Evasion</strong> (from your class description)</li>
+            <li><strong>Armor Score</strong> and <strong>Damage Thresholds</strong> (determined by equipment)</li>
+            <li><strong>6 Stress slots</strong> (mental strain capacity)</li>
+            <li><strong>2 Hope points</strong> (resource for special moves)</li>
+        </ul>
+        
+        <h3>5. Choose Starting Equipment</h3>
+        <p><strong>Weapons:</strong> Pick from basic starting options (e.g., greatsword, sword and shield). Note the damage dice and which trait you use to attack.</p>
+        <p><strong>Armor:</strong> Choose starting armor (leather, chain, etc.). Add your level (1) to the Base Damage Thresholds and note the Armor Score.</p>
+        <p><strong>Standard Gear:</strong> Every character starts with a torch, 50 feet of rope, basic supplies, some gold, plus one Minor Health or Stamina Potion (your choice).</p>
+        
+        <h3>6. Create Your Background</h3>
+        <p>Answer prompts to flesh out your character's story and motivations. Examples include:</p>
+        <ul>
+            <li>"Who taught you to fight and why did they stay behind?"</li>
+            <li>"What personal tragedy set you on this path?"</li>
+        </ul>
+        <p>This step has no mechanical effect—be creative or keep it simple. You can even discover your backstory through play.</p>
+        
+        <h3>7. Define Two Experiences</h3>
+        <p><strong>Experiences</strong> are free-form proficiencies or life experiences that give you a +2 bonus to relevant rolls when you spend Hope. Create two experiences like:</p>
+        <ul>
+            <li>"Skilled Blacksmith"</li>
+            <li>"Streetwise"</li>
+            <li>"Natural Leader"</li>
+            <li>"Light on My Feet"</li>
+        </ul>
+        <p><strong>Guidelines:</strong> Avoid being too broad ("Strong," "Lucky") or magical ("Can Turn Invisible"). Focus on realistic skills, backgrounds, or personality traits.</p>
+        
+        <h3>8. Select Two Domain Cards</h3>
+        <p>Choose two level-1 abilities from your class's domains. You can take one from each domain or two from the same domain. These are your starting spells/abilities.</p>
+        <p><em>Example: A Rogue with Shadow and Blade domains might take a stealth attack from Blade and a sneaky trick from Shadow.</em></p>
+        
+        <h3>9. Establish Party Connections</h3>
+        <p>Link your character's story with other players using connection prompts:</p>
+        <ul>
+            <li>"What lie have you told me that I absolutely believe?"</li>
+            <li>"Why did I grab your hand when we first faced danger?"</li>
+        </ul>
+        <p>Aim for at least one connection with each party member. Players can veto suggested connections that don't fit their character.</p>
+        
+        <h2 id="checklist">Character Creation Checklist</h2>
+        <ul>
+            <li>☐ Class & Subclass chosen</li>
+            <li>☐ Heritage selected (Ancestry + Community)</li>
+            <li>☐ Trait scores assigned</li>
+            <li>☐ Vital stats filled in</li>
+            <li>☐ Equipment selected</li>
+            <li>☐ Background created</li>
+            <li>☐ Two Experiences defined</li>
+            <li>☐ Two Domain abilities chosen</li>
+            <li>☐ Party connections established</li>
+        </ul>
+        
+        <h2 id="starting-stats">Starting Stats Summary</h2>
+        <ul>
+            <li><strong>Level:</strong> 1</li>
+            <li><strong>Hope:</strong> 2</li>
+            <li><strong>Stress:</strong> 6 (empty)</li>
+            <li><strong>Proficiency:</strong> 1</li>
+            <li><strong>Traits:</strong> +2, +1, +1, 0, 0, -1</li>
+            <li><strong>Experiences:</strong> 2 (+2 each)</li>
+            <li><strong>Domain Abilities:</strong> 2</li>
+        </ul>
+        
+        <hr>
+        
+        <h2 id="classes">Classes Reference</h2>
+        
+        <h3>Bard</h3>
+        <div class="class-header">
+            <div class="stat-line"><strong>Domains:</strong> Grace & Codex | <strong>Starting Evasion:</strong> 10 | <strong>Starting Hit Points:</strong> 5</div>
+        </div>
+        <p>Bards are the most charismatic people in all the realms, masters of captivation specializing in various performance types. They thrive in social situations and can bring people together or tear them apart with their words.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>Make a Scene:</strong> Spend 3 Hope to temporarily Distract a target within Close range</li>
+            <li><strong>Rally:</strong> Once per session, give yourself and allies Rally Dice (d6 at level 1, d8 at level 5)</li>
+        </ul>
+        
+        <h4>Subclasses</h4>
+        
+        <h4>Troubadour (Spellcast: Presence)</h4>
+        <p>Play the Troubadour if you want to play music to bolster your allies.</p>
+        <p><strong><em>Gifted Performer:</em></strong> You can play three different types of songs, once each per long rest; describe how you perform for others to gain the listed benefit:</p>
+        <ul>
+            <li><strong>Relaxing Song:</strong> You and all allies within Close range clear a Hit Point.</li>
+            <li><strong>Epic Song:</strong> Make a target within Close range temporarily Vulnerable.</li>
+            <li><strong>Heartbreaking Song:</strong> You and all allies within Close range gain a Hope.</li>
+        </ul>
+        
+        <h4>Wordsmith (Spellcast: Presence)</h4>
+        <p>Play the Wordsmith if you want to use clever wordplay and captivate crowds.</p>
+        <p><strong><em>Rousing Speech:</em></strong> Once per long rest, you can give a heartfelt, inspiring speech. All allies within Far range clear 2 Stress.</p>
+        <p><strong><em>Heart of a Poet:</em></strong> After you make an action roll to impress, persuade, or offend someone, you can spend a Hope to add a d4 to the roll.</p>
+        
+        <h3>Druid</h3>
+        <div class="class-header">
+            <div class="stat-line"><strong>Domains:</strong> Sage & Arcana | <strong>Starting Evasion:</strong> 10 | <strong>Starting Hit Points:</strong> 6</div>
+        </div>
+        <p>Druids are called to learn from and protect the magic of the wilderness. They can transform into beasts and shape nature itself through years of study and dedication.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>Evolution:</strong> Spend 3 Hope to transform into a Beastform without marking Stress</li>
+            <li><strong>Beastform:</strong> Mark a Stress to transform into creatures from an extensive list organized by tier</li>
+            <li><strong>Wildtouch:</strong> Perform harmless nature effects at will</li>
+        </ul>
+        
+        <h3>Guardian</h3>
+        <div class="class-header">
+            <div class="stat-line"><strong>Domains:</strong> Valor & Blade | <strong>Starting Evasion:</strong> 9 | <strong>Starting Hit Points:</strong> 7</div>
+        </div>
+        <p>Guardians represent various martial professions united by moral compass and unshakeable fortitude. They fight with remarkable ferocity to defend those they care for above all else.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>Frontline Tank:</strong> Spend 3 Hope to clear 2 Armor Slots</li>
+            <li><strong>Unstoppable:</strong> Once per long rest, gain an Unstoppable Die that builds power as you deal damage</li>
+        </ul>
+        
+        <h3>Ranger</h3>
+        <div class="class-header">
+            <div class="stat-line"><strong>Domains:</strong> Bone & Sage | <strong>Starting Evasion:</strong> 12 | <strong>Starting Hit Points:</strong> 6</div>
+        </div>
+        <p>Rangers are skilled hunters who become sly tacticians through mastery of body and wilderness. They pursue quarry with cunning and patience, often alongside animal companions.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>Hold Them Off:</strong> Spend 3 Hope to use the same attack roll against two additional adversaries</li>
+            <li><strong>Ranger's Focus:</strong> Mark a target as your Focus, gaining tracking and combat bonuses against them</li>
+        </ul>
+        
+        <h3>Rogue</h3>
+        <div class="class-header">
+            <div class="stat-line"><strong>Domains:</strong> Midnight & Grace | <strong>Starting Evasion:</strong> 12 | <strong>Starting Hit Points:</strong> 6</div>
+        </div>
+        <p>Rogues are scoundrels known as liars and thieves who move through the world anonymously. They manipulate shadow and movement, utilizing sharp wits and blades for social manipulation and combat.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>Rogue's Dodge:</strong> Spend 3 Hope to gain +2 Evasion bonus</li>
+            <li><strong>Cloaked:</strong> Enhanced Hidden condition that persists when stationary</li>
+            <li><strong>Sneak Attack:</strong> Add d6s equal to your tier when attacking while Cloaked or with ally support</li>
+        </ul>
+        
+        <h3>Seraph</h3>
+        <div class="class-header">
+            <div class="stat-line"><strong>Domains:</strong> Splendor & Valor | <strong>Starting Evasion:</strong> 9 | <strong>Starting Hit Points:</strong> 7</div>
+        </div>
+        <p>Seraphs are divine fighters and healers imbued with sacred purpose by various deities. Their ethos aligns with their god's domain, making them terrifying foes to those who defy their purpose.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>Life Support:</strong> Spend 3 Hope to clear a Hit Point on an ally within Close range</li>
+            <li><strong>Prayer Dice:</strong> Roll d4s equal to Spellcast trait at session start for flexible aid</li>
+        </ul>
+        
+        <h3>Sorcerer</h3>
+        <div class="class-header">
+            <div class="stat-line"><strong>Domains:</strong> Arcana & Midnight | <strong>Starting Evasion:</strong> 10 | <strong>Starting Hit Points:</strong> 6</div>
+        </div>
+        <p>Sorcerers learn to cultivate and control innate magical power passed down through families. Their abilities range from elemental to illusionary, making undisciplined sorcerers dangerous forces.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>Volatile Magic:</strong> Spend 3 Hope to reroll damage dice on magic attacks</li>
+            <li><strong>Arcane Sense:</strong> Detect magical people and objects within Close range</li>
+            <li><strong>Minor Illusion:</strong> Create convincing visual illusions</li>
+            <li><strong>Channel Raw Power:</strong> Once per long rest, vault a domain card for Hope or damage bonus</li>
+        </ul>
+        
+        <h3>Warrior</h3>
+        <div class="class-header">
+            <div class="stat-line"><strong>Domains:</strong> Blade & Bone | <strong>Starting Evasion:</strong> 11 | <strong>Starting Hit Points:</strong> 6</div>
+        </div>
+        <p>Warriors require years of training in weapons and violence mastery. They understand the importance of agile body and mind, making them sought-after fighters who must continue improving their skills.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>No Mercy:</strong> Spend 3 Hope to gain +1 bonus to attack rolls until next rest</li>
+            <li><strong>Attack of Opportunity:</strong> React when adversaries try to leave Melee range</li>
+            <li><strong>Combat Training:</strong> Ignore weapon burden and add level to physical damage</li>
+        </ul>
+        
+        <h3>Wizard</h3>
+        <div class="class-header">
+            <div class="stat-line"><strong>Domains:</strong> Codex & Splendor | <strong>Starting Evasion:</strong> 11 | <strong>Starting Hit Points:</strong> 5</div>
+        </div>
+        <p>Wizards acquire immense magical power through institutional or individual study using books, stones, potions, and herbs. They become wise community figures but often conflict over magical knowledge.</p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>Not This Time:</strong> Spend 3 Hope to force an adversary to reroll an attack or damage roll</li>
+            <li><strong>Prestidigitation:</strong> Perform harmless magical effects at will</li>
+            <li><strong>Strange Patterns:</strong> Choose a number 1-12; gain Hope or clear Stress when rolling it on Duality Dice</li>
+        </ul>
+        
+        <hr>
+        
+        <h2 id="ancestries">Ancestries Reference</h2>
+        
+        <h3>Clank</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> Effectively immortal (with part replacement) | <strong>Average Height:</strong> Variable</div>
+        </div>
+        <p>Clanks are sentient mechanical beings built from various materials including metal, wood, and stone. They can resemble humanoids, animals, or even inanimate objects, with highly specialized physical configurations like clawed hands, wheels, or built-in weaponry.</p>
+        <ul>
+            <li><strong><em>Purposeful Design:</em></strong> Choose one Experience at character creation and gain a permanent +1 bonus to it</li>
+            <li><strong><em>Efficient:</em></strong> During short rest, can choose a long rest move instead</li>
+        </ul>
+        
+        <h3>Drakona</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~350 years | <strong>Average Height:</strong> 5-7 feet</div>
+        </div>
+        <p>Drakona resemble wingless dragons in humanoid form with thick protective scales and powerful elemental breath. They are large, with long sharp teeth that continuously regenerate throughout their lives.</p>
+        <ul>
+            <li><strong><em>Scales:</em></strong> When taking Severe damage, mark a Stress to mark 1 fewer Hit Points</li>
+            <li><strong><em>Elemental Breath:</em></strong> Choose an element for d8 magic damage breath weapon within Very Close range</li>
+        </ul>
+        
+        <h3>Dwarf</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~250 years | <strong>Average Height:</strong> 4-5.5 feet</div>
+        </div>
+        <p>Dwarves are short, square-framed humanoids with dense musculature and thick hair. Their keratin-rich skin allows them to embed gemstones and support elaborate tattoos and piercings. All genders can grow facial hair.</p>
+        <ul>
+            <li><strong><em>Thick Skin:</em></strong> When taking Minor damage, can mark 2 Stress instead of a Hit Point</li>
+            <li><strong><em>Increased Fortitude:</em></strong> Spend 3 Hope to halve incoming physical damage</li>
+        </ul>
+        
+        <h3>Elf</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~350 years | <strong>Average Height:</strong> 6-6.5 feet</div>
+        </div>
+        <p>Elves are tall humanoids with pointed ears and acute senses. They possess the ability to enter celestial trance instead of sleep. Some develop "mystic forms" with celestial freckles, plant matter in hair, or flickering eyes.</p>
+        <ul>
+            <li><strong><em>Quick Reactions:</em></strong> Mark a Stress to gain advantage on a reaction roll</li>
+            <li><strong><em>Celestial Trance:</em></strong> During rest, can choose an additional downtime move</li>
+        </ul>
+        
+        <h3>Faerie</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~50 years | <strong>Average Height:</strong> 2-7 feet (typically 2-5 feet)</div>
+        </div>
+        <p>Faeries are winged humanoids with insectile features ranging from additional arms to compound eyes, chitinous exoskeletons, or plant-like camouflage. All possess membranous wings and undergo metamorphosis.</p>
+        <ul>
+            <li><strong><em>Luckbender:</em></strong> Once per session, spend 3 Hope to reroll Duality Dice for you or nearby ally</li>
+            <li><strong><em>Wings:</em></strong> Can fly; mark Stress after being attacked to gain +2 Evasion</li>
+        </ul>
+        
+        <h3>Faun</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~225 years | <strong>Average Height:</strong> 4-6.5 feet</div>
+        </div>
+        <p>Fauns resemble humanoid goats with curving horns, square pupils, and cloven hooves. They have humanoid torsos with goatlike lower bodies covered in dense fur, and are known for their powerful kicks.</p>
+        <ul>
+            <li><strong><em>Caprine Leap:</em></strong> Leap anywhere within Close range as normal movement</li>
+            <li><strong><em>Kick:</em></strong> On successful melee attack, mark Stress for extra 2d6 damage and knockback</li>
+        </ul>
+        
+        <h3>Firbolg</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~150 years | <strong>Average Height:</strong> Variable (tall and muscular)</div>
+        </div>
+        <p>Firbolgs are bovine humanoids with broad noses and drooping ears. They range from humanoid-bovine blends to full minotaurs with cattle heads. All are covered in fur that can be earth-toned or pastel colored.</p>
+        <ul>
+            <li><strong><em>Charge:</em></strong> When moving from Far/Very Far to Melee range, mark Stress for 1d12 damage to all in Melee</li>
+            <li><strong><em>Unshakable:</em></strong> When marking Stress, roll d6 - on 6, don't mark it</li>
+        </ul>
+        
+        <h3>Fungril</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~300+ years | <strong>Average Height:</strong> 2-7 feet</div>
+        </div>
+        <p>Fungril resemble humanoid mushrooms with incredible variety in colors, bodies, faces, and limbs. They can communicate nonverbally and use mycelial arrays for long-distance chemical communication with other fungril.</p>
+        <ul>
+            <li><strong><em>Fungril Network:</em></strong> Instinct Roll (12) to communicate across any distance with other fungril</li>
+            <li><strong><em>Death Connection:</em></strong> Mark Stress while touching recent corpse to extract specific memory</li>
+        </ul>
+        
+        <h3>Galapa</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~150 years | <strong>Average Height:</strong> 4-6 feet</div>
+        </div>
+        <p>Galapa resemble anthropomorphic turtles with large domed shells they can retract into. They come in earth tones with unique shell patterns and move slowly regardless of age.</p>
+        <ul>
+            <li><strong><em>Shell:</em></strong> Gain bonus to damage thresholds equal to Proficiency</li>
+            <li><strong><em>Retract:</em></strong> Mark Stress to retract for physical damage resistance but disadvantage on rolls</li>
+        </ul>
+        
+        <h3>Giant</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~75 years | <strong>Average Height:</strong> 6.5-8.5 feet</div>
+        </div>
+        <p>Giants are towering humanoids with broad shoulders, long arms, and 1-3 eyes. They're born sightless and develop their eyes over their first 10 years. Those with one eye are called cyclops.</p>
+        <ul>
+            <li><strong><em>Endurance:</em></strong> Gain an additional Hit Point slot at creation</li>
+            <li><strong><em>Reach:</em></strong> Treat Melee range as Very Close range for weapons and abilities</li>
+        </ul>
+        
+        <h3>Goblin</h3>
+        <div class="ancestry-header">
+            <div class="stat-line"><strong>Lifespan:</strong> ~100 years | <strong>Average Height:</strong> 3-4 feet</div>
+        </div>
+        <p>Goblins are small humanoids with large eyes and massive membranous ears (about head-sized). They have keen hearing and sharp eyesight, with incredibly varied skin and eye colors
